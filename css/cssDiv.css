@@ -53,3 +53,9 @@
     color: #fff;
     background-color: #e58a8a;
 }
+
+/* 打字机 */
+
+.typed-cursor.h2.typed-cursor--blink{
+    color: red;
+}
