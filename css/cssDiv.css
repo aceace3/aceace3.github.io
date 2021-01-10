@@ -12,7 +12,7 @@
 /* 打字机效果渐变 -bynote.cn*/
 
 #subtitle {
-    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+    background: linear-gradient(-45deg, #FF8C00, #FFA500, #FFD700, #FFFF00);
     background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
     -moz-animation: Gradient 10s ease infinite;
@@ -26,6 +26,8 @@
     -webkit-text-fill-color: transparent;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    font-family: mysx;
+    font-size: 25px;
 }
 
 #subtitle:before {
