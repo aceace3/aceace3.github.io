@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: ;
+}
+.mouse{
+	background-image: url(../img/back.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#midd{
+	height: 1600px;
+	width: 1600px;
+	margin-top:300px;
+	margin-left: 1500px;
+
+}
