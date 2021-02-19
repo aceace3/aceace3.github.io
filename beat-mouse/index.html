@@ -217,151 +217,152 @@
   <!DOCTYPE html>
 <html>
 
-<div class="hljs code-wrapper"><pre><code>&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/mouse.css&quot; /&gt;
-&lt;/head&gt;
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/mouse.css" />
+	</head>
 
-&lt;body class=&quot;mouse&quot;&gt;
-    &lt;div id=&quot;midd&quot;&gt;
-        &lt;div id=&quot;div1&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;one&quot;&gt;&lt;/div&gt;
-
-        &lt;div id=&quot;div2&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;two&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div3&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;three&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div4&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;four&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div5&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;five&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div6&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;six&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div7&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;siven&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div8&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;eight&quot;&gt;&lt;/div&gt;
-        &lt;div id=&quot;div9&quot; name=&quot;d1&quot; style=&quot;float: left;&quot;&gt;&lt;img src=&quot;img/keng.png&quot; width=&quot;500px&quot; height=&quot;500px&quot; id=&quot;nine&quot;&gt;&lt;/div&gt;</code></pre></div>
+	<body class="mouse">
+		<div id="midd">
+			<div id="div1" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="one"></div>
+			
+			<div id="div2" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="two"></div>
+			<div id="div3" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="three"></div>
+			<div id="div4" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="four"></div>
+			<div id="div5" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="five"></div>
+			<div id="div6" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="six"></div>
+			<div id="div7" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="siven"></div>
+			<div id="div8" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="eight"></div>
+			<div id="div9" name="d1" style="float: left;"><img src="img/keng.png" srcset="/img/loading.gif" width="500px" height="500px" id="nine"></div>
 </div>
-            <script language="JavaScript">
-                var one =document.getElementById("one");
-                var two =document.getElementById("two");
-                var three =document.getElementById("three");
-                var four =document.getElementById("four");
-                var five =document.getElementById("five");
-                var six =document.getElementById("six");
-                var seven =document.getElementById("seven");
-                var eight =document.getElementById("eight");
-                var nine =document.getElementById("nine");
-
-<div class="hljs code-wrapper"><pre><code>            var mid=document.getElementById(&quot;midd&quot;);
-        var div1=document.getElementById(&quot;div1&quot;);
-        var div2=document.getElementById(&quot;div2&quot;);
-        var div3=document.getElementById(&quot;div3&quot;);
-        var div4=document.getElementById(&quot;div4&quot;);
-        var div5=document.getElementById(&quot;div5&quot;);
-        var div6=document.getElementById(&quot;div6&quot;);
-        var div7=document.getElementById(&quot;div7&quot;);
-        var div8=document.getElementById(&quot;div8&quot;);
-        var div9=document.getElementById(&quot;div9&quot;);
-
-
-            setInterval(function updateAli()&#123;    
-            var randomNum=parseInt(Math.random()*9);
-            console.log(randomNum);    
-            switch(randomNum)&#123;
-                case 0:
-                    one.src=&quot;img/11.png&quot;;
-                    div1.name=&quot;d2&quot;;
-                    setTimeout(&quot;one.src=&#39;img/keng.png&#39;;div1.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 1:
-                    two.src=&quot;img/11.png&quot;;
-                    div2.name=&quot;d2&quot;;
-                    setTimeout(&quot;two.src=&#39;img/keng.png&#39;;div2.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 2:
-                    three.src=&quot;img/11.png&quot;;
-                    div3.name=&quot;d2&quot;;
-                    setTimeout(&quot;three.src=&#39;img/keng.png&#39;;div3.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 3:
-                    four.src=&quot;img/11.png&quot;;
-                    div4.name=&quot;d2&quot;;
-                    setTimeout(&quot;four.src=&#39;img/keng.png&#39;;div4.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 4:
-                    five.src=&quot;img/11.png&quot;;
-                    div5.name=&quot;d2&quot;;
-                    setTimeout(&quot;five.src=&#39;img/keng.png&#39;;div5.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 5:
-                    six.src=&quot;img/11.png&quot;;
-                    div6.name=&quot;d2&quot;;
-                    setTimeout(&quot;six.src=&#39;img/keng.png&#39;;div6.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 6:
-                    siven.src=&quot;img/11.png&quot;;
-                    div7.name=&quot;d2&quot;;
-                    setTimeout(&quot;siven.src=&#39;img/keng.png&#39;;div7.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 7:
-                    eight.src=&quot;img/11.png&quot;;
-                    div8.name=&quot;d2&quot;;
-                    setTimeout(&quot;eight.src=&#39;img/keng.png&#39;;div8.name=&#39;d1&#39;&quot;,1000);
-                    break;
-                case 8:
-                    nine.src=&quot;img/11.png&quot;;
-                    div9.name=&quot;d2&quot;;
-                    setTimeout(&quot;nine.src=&#39;img/keng.png&#39;;div9.name=&#39;d1&#39;&quot;,1000);
-                    break;
-
-            &#125;
-
-            &#125;,1000);
+			<script language="JavaScript">
+				var one =document.getElementById("one");
+				var two =document.getElementById("two");
+				var three =document.getElementById("three");
+				var four =document.getElementById("four");
+				var five =document.getElementById("five");
+				var six =document.getElementById("six");
+				var seven =document.getElementById("seven");
+				var eight =document.getElementById("eight");
+				var nine =document.getElementById("nine");
+				
+				var mid=document.getElementById("midd");
+			var div1=document.getElementById("div1");
+			var div2=document.getElementById("div2");
+			var div3=document.getElementById("div3");
+			var div4=document.getElementById("div4");
+			var div5=document.getElementById("div5");
+			var div6=document.getElementById("div6");
+			var div7=document.getElementById("div7");
+			var div8=document.getElementById("div8");
+			var div9=document.getElementById("div9");
 
 
-            div1.onclick=function()&#123;
-                if(div1.name==&quot;d2&quot;)&#123;
-                    one.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div2.onclick=function()&#123;
-                if(div2.name==&quot;d2&quot;)&#123;
-                    two.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div3.onclick=function()&#123;
-                if(div3.name==&quot;d2&quot;)&#123;
-                    three.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div4.onclick=function()&#123;
-                if(div4.name==&quot;d2&quot;)&#123;
-                    four.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div5.onclick=function()&#123;
-                if(div5.name==&quot;d2&quot;)&#123;
-                    five.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div6.onclick=function()&#123;
-                if(div6.name==&quot;d2&quot;)&#123;
-                    six.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div7.onclick=function()&#123;
-                if(div7.name==&quot;d2&quot;)&#123;
-                    siven.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div8.onclick=function()&#123;
-                if(div8.name==&quot;d2&quot;)&#123;
-                    eight.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-            div9.onclick=function()&#123;
-                if(div9.name==&quot;d2&quot;)&#123;
-                    nine.src=&quot;img/111.png&quot;;
-                &#125;
-            &#125;
-        &lt;/script&gt;
+				setInterval(function updateAli(){	
+				var randomNum=parseInt(Math.random()*9);
+				console.log(randomNum);	
+				switch(randomNum){
+					case 0:
+						one.src="img/11.png";
+						div1.name="d2";
+						setTimeout("one.src='img/keng.png';div1.name='d1'",1000);
+						break;
+					case 1:
+						two.src="img/11.png";
+						div2.name="d2";
+						setTimeout("two.src='img/keng.png';div2.name='d1'",1000);
+						break;
+					case 2:
+						three.src="img/11.png";
+						div3.name="d2";
+						setTimeout("three.src='img/keng.png';div3.name='d1'",1000);
+						break;
+					case 3:
+						four.src="img/11.png";
+						div4.name="d2";
+						setTimeout("four.src='img/keng.png';div4.name='d1'",1000);
+						break;
+					case 4:
+						five.src="img/11.png";
+						div5.name="d2";
+						setTimeout("five.src='img/keng.png';div5.name='d1'",1000);
+						break;
+					case 5:
+						six.src="img/11.png";
+						div6.name="d2";
+						setTimeout("six.src='img/keng.png';div6.name='d1'",1000);
+						break;
+					case 6:
+						siven.src="img/11.png";
+						div7.name="d2";
+						setTimeout("siven.src='img/keng.png';div7.name='d1'",1000);
+						break;
+					case 7:
+						eight.src="img/11.png";
+						div8.name="d2";
+						setTimeout("eight.src='img/keng.png';div8.name='d1'",1000);
+						break;
+					case 8:
+						nine.src="img/11.png";
+						div9.name="d2";
+						setTimeout("nine.src='img/keng.png';div9.name='d1'",1000);
+						break;
+					
+				}
+						
+				},1000);
+				
+					
+				div1.onclick=function(){
+					if(div1.name=="d2"){
+						one.src="img/111.png";
+					}
+				}
+				div2.onclick=function(){
+					if(div2.name=="d2"){
+						two.src="img/111.png";
+					}
+				}
+				div3.onclick=function(){
+					if(div3.name=="d2"){
+						three.src="img/111.png";
+					}
+				}
+				div4.onclick=function(){
+					if(div4.name=="d2"){
+						four.src="img/111.png";
+					}
+				}
+				div5.onclick=function(){
+					if(div5.name=="d2"){
+						five.src="img/111.png";
+					}
+				}
+				div6.onclick=function(){
+					if(div6.name=="d2"){
+						six.src="img/111.png";
+					}
+				}
+				div7.onclick=function(){
+					if(div7.name=="d2"){
+						siven.src="img/111.png";
+					}
+				}
+				div8.onclick=function(){
+					if(div8.name=="d2"){
+						eight.src="img/111.png";
+					}
+				}
+				div9.onclick=function(){
+					if(div9.name=="d2"){
+						nine.src="img/111.png";
+					}
+				}
+			</script>
+		
+	</body>
 
-&lt;/body&gt;</code></pre></div>
 </html>
 </div>
 
