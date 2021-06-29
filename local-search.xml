@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>【感想】Salesforce END</title>
+    <link href="/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/"/>
+    <url>/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/</url>
+    
+    <content type="html"><![CDATA[<p>2个多月的体验服到期咯，体验下来这个东西还真是好用啊，功能丰富，简化代码。可惜数据都存在美国、日本了，国内公司不敢用啊！也不知道跟阿里的合作会怎么展开，期待一下吧。</p><p>没能继续干，有点可惜，还没来得及把学到的知识输出到博客和项目中，就匆匆结束了。没办法，只能说不合适吧！</p><p>不过这两个多月，也摸到了一些学习salesefoce的门道，不深，但是如果有新人碰巧也在入门中，且在迷茫，看到了我的帖子，可以从个人页加我微信交流~我会把我的经验都告诉你的！（在我忘记之前^-^）毕竟目前国内学习渠道还很少，有也花钱。</p><p>今天离开公司，仔细回忆了一下。这两个多月，收获其实还挺大的，至少阅读英文文档顺畅多了。这翻译过来的内容果然有出入x_x。以后遇到问题首选Google了要。</p><p>就到这吧，farewell~ ////</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Salesforce</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>原创</tag>
+      
+      <tag>Salesforce</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【Salseforce】Batch</title>
     <link href="/2021/05/09/%E3%80%90Salseforce%E3%80%91Batch/"/>
     <url>/2021/05/09/%E3%80%90Salseforce%E3%80%91Batch/</url>
@@ -31,11 +58,11 @@
   
   
   <entry>
-    <title>【感想】离开Java，拥抱Salesforce</title>
-    <link href="/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E7%A6%BB%E5%BC%80Java%EF%BC%8C%E6%8B%A5%E6%8A%B1Salesforce/"/>
-    <url>/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E7%A6%BB%E5%BC%80Java%EF%BC%8C%E6%8B%A5%E6%8A%B1Salesforce/</url>
+    <title>【感想】新的开始，Salesforce</title>
+    <link href="/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%EF%BC%8CSalesforce/"/>
+    <url>/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%EF%BC%8CSalesforce/</url>
     
-    <content type="html"><![CDATA[<p>唯一一份Java实习已经结束有一段日子了，学习salesforce也一个多月了。</p><p>临近毕业，工作，生活和学习中都有很多事情要忙，博客一直都没有写，没想到这一拖，拖到现在写的第一篇技术文章都不是Java了，事情的发展还真是难以预料啊。至于为什么要换语言，因为直觉告诉我还不错？哈哈，怎么想的不重要，因为已经做了这个决定了。</p><p>现在用到的技术语法与Java有相似的地方，所以上手不是太难，但是继续学习下去还是要勤奋坚持的，毕竟本人愚钝，而且学习环境还是英文，每次查个bug还要借用梯子。。</p><p>这个时候，我又想起大一大二在KFC兼职时候的事情了，第一份领工资的地方。在入职前忐忑不安，害怕会怯场。上班之后遇见一个大我两岁的学长跟我说“这是工作，不是玩儿”，听完这话我好像悟了点什么，当天晚上睡觉前我就下定决心要早日做到独当一面，哈，这真是一个帅气的词。最后确实做到了在前台岗一夫当关万夫莫开（吹一波哈哈）。</p><p>所以这次定个目标吧，或者职业规划。先做到<strong>独当一面</strong>，其他的日后再说，干就完了。over~</p><hr><p>至于博客以后的方向，还是多发一些自己的学习体会吧，记录下来避免忘记。<br>内容多是sf知识，但是等过些日子，得了空，还是要深入学习计算机基础的。算法，数据结构，计算机网络，数据库，Python，AI等等等等。而且Java学了那么久，也有感情了，打算再写个项目维护下去。所以这些也会在博客体现吧，希望可以做到。不过大概率还是龟速更新的哈哈。。。</p>]]></content>
+    <content type="html"><![CDATA[<p>唯一一份Java实习已经结束有一段日子了，学习salesforce也一个多月了。</p><p>临近毕业，工作，生活和学习中都有很多事情要忙，博客一直都没有写，没想到这一拖，拖到现在写的第一篇技术文章都不是Java了，事情的发展还真是难以预料啊。</p><p>现在用到的技术语法与Java有相似的地方，所以上手不是太难，但是继续学习下去还是要勤奋坚持的，毕竟本人愚钝，而且学习环境还是英文，每次查个bug还要借用梯子。。</p><p>这个时候，我又想起大一大二在KFC兼职时候的事情了，第一份领工资的地方。在入职前忐忑不安，害怕会怯场。上班之后遇见一个大我两岁的学长跟我说“这是工作，不是玩儿”，听完这话我好像悟了点什么，当天晚上睡觉前我就下定决心要早日做到独当一面，哈哈，这个词感觉真帅，最后也确实做到了。</p><p>所以这次也加油吧！</p><hr><p>至于博客以后的方向，还是多发一些自己的学习体会吧，记录下来避免忘记。<br>内容多是sf知识，但是等过些日子，得了空，还是要深入学习计算机基础的。算法，数据结构，计算机网络，数据库，Python，AI等等等等。而且Java学了那么久，也有感情了，打算再写个项目维护下去。所以这些也会在博客体现吧，希望可以做到。不过大概率还是龟速更新的哈哈。。。</p>]]></content>
     
     
     <categories>
@@ -50,6 +77,33 @@
       <tag>原创</tag>
       
       <tag>Salesforce</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>【转载】【Linux】常用命令</title>
+    <link href="/2021/04/24/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90Linux%E3%80%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <url>/2021/04/24/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90Linux%E3%80%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    
+    <content type="html"><![CDATA[<h2 id="转载一篇Linux常用命令放在博客里吧，又学了一遍，不过这东西用不上太容易忘了，记录一下吧"><a href="#转载一篇Linux常用命令放在博客里吧，又学了一遍，不过这东西用不上太容易忘了，记录一下吧" class="headerlink" title="转载一篇Linux常用命令放在博客里吧，又学了一遍，不过这东西用不上太容易忘了，记录一下吧"></a><strong><em>转载一篇Linux常用命令放在博客里吧，又学了一遍，不过这东西用不上太容易忘了，记录一下吧</em></strong></h2><h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><p>1.说出10个linux常用的指令</p><ul><li><p>ls 查看目录中的文件</p></li><li><p>cd /home 进入 ‘/ home’ 目录；cd .. 返回上一级目录；cd ../.. 返回上两级目录</p></li><li><p>mkdir dir1 创建一个叫做 ‘dir1’ 的目录</p></li><li><p>rmdir dir1 删除一个叫做 ‘dir1’ 的目录 （只能删除空目录）</p></li><li><p>rm -f file1 删除一个叫做 ‘file1’ 的文件’，-f 参数，忽略不存在的文件，从不给出提示。</p></li><li><p>rm -rf /mulu  目录下面文件以及子目录下文件</p></li><li><p>cp /test1/file1 /test3/file2<br>如将/test1目录下的file1复制到/test3目录，并将文件名改为file2</p></li><li><p>mv /test1/file1 /test3/file2  如将/test1目录下的file1移动到/test3<br>目录，并将文件名改为file2</p></li><li><p>mv * ../ Linux当前目录所有文件移动到上一级目录</p></li><li><p>ps -ef|grep xxx 显示进程pid</p></li><li><p>kill  使用kill命令来终结进程。先使用ps命令找到进程id，使用kill -9命令，终止进程。</p></li><li><p>tar –xvf file.tar  解压 tar包</p></li><li><p>unzip file.zip 解压zip</p></li><li><p>unrar e file.rar 解压rar</p></li><li><p>free -m  查看服务器内存使用情况</p></li></ul><h2 id="ps查看进程"><a href="#ps查看进程" class="headerlink" title="ps查看进程"></a>ps查看进程</h2><p>2.如何查看所有java进程</p><ul><li>grep是搜索关键字</li></ul><blockquote><p>ps -ef | grep java</p></blockquote><ul><li>-aux 显示所有状态</li></ul><blockquote><p>ps -aux | grep java</p></blockquote><h2 id="kill-杀掉进程"><a href="#kill-杀掉进程" class="headerlink" title="kill 杀掉进程"></a>kill 杀掉进程</h2><p>3.如何杀掉某个服务的进程</p><ul><li><p>kill 命令用于终止进程</p></li><li><p>-9 强迫进程立即停止</p></li></ul><blockquote><p>kill -9 [PID]</p></blockquote><p>这里pid需要用 ps -ef | grep 查询pid<br><img src="https://img-blog.csdnimg.cn/20210629182734597.png#pic_center" alt="在这里插入图片描述"></p><h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><p>4.如何启动服务</p><p>以启动Tomcat为例,先cd到启动的.sh文件目录</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash"> <span class="hljs-built_in">cd</span> /java/tomcat/bin</span><br><span class="hljs-meta">&gt;</span><span class="bash"> ./startup.sh</span><br></code></pre></div></td></tr></table></figure><p>停止Tomcat服务命令</p><figure class="highlight shell"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs shell"><span class="hljs-meta">&gt;</span><span class="bash"> ./shutdown.sh</span><br></code></pre></div></td></tr></table></figure><h2 id="查看日志"><a href="#查看日志" class="headerlink" title="查看日志"></a>查看日志</h2><p>5.如何查看测试项目的日志</p><p>一般测试的项目里面，有个logs的目录文件，会存放日志文件，有个xxx.out的文件，可以用tail -f 动态实时查看后端日志</p><p>先cd 到logs目录(里面有xx.out文件)</p><blockquote><p>tail -f xx.out</p></blockquote><p>这时屏幕上会动态实时显示当前的日志，ctr+c停止</p><p>6.如何查看最近1000行日志</p><blockquote><p>tail -1000 xx.out</p></blockquote><h2 id="查看端口"><a href="#查看端口" class="headerlink" title="查看端口"></a>查看端口</h2><p>7.LINUX中如何查看某个端口是否被占用</p><blockquote><p>netstat  -anp  | grep   端口号<br><img src="https://img-blog.csdnimg.cn/20210629183051434.png#pic_center" alt="在这里插入图片描述"></p></blockquote><p><strong>图中主要看监控状态为LISTEN表示已经被占用，最后一列显示被服务mysqld占用，查看具体端口号，只要有如图这一行就表示被占用了</strong></p><p>查看82端口的使用情况，如图</p><blockquote><p>netstat  -anp  |grep  82<br><img src="https://img-blog.csdnimg.cn/20210629183130704.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjE5MDAxMQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p></blockquote><p><strong>可以看出并没有LISTEN那一行，所以就表示没有被占用。此处注意，图中显示的LISTENING并不表示端口被占用，不要和LISTEN混淆哦，查看具体端口时候，必须要看到tcp，端口号，LISTEN那一行，才表示端口被占用了</strong></p><p>查看当前所有已经使用的端口情况，如图：</p><blockquote><p>netstat   -nultp（此处不用加端口号）<br><img src="https://img-blog.csdnimg.cn/20210629183155833.png#pic_center" alt="在这里插入图片描述"></p></blockquote><h2 id="find查找文件"><a href="#find查找文件" class="headerlink" title="find查找文件"></a>find查找文件</h2><p>8.如何查找一个文件大小超过5M的文件</p><blockquote><p>find . -type f -size +100M</p></blockquote><p>9.如果知道一个文件名称，怎么查这个文件在linux下的哪个目录，如：要查找tnsnames.ora文件</p><blockquote><p>find / -name tnsnames.ora</p></blockquote><p>查到：<br>/opt/app/oracle/product/10.2/network/admin/tnsnames.ora<br>/opt/app/oracle/product/10.2/network/admin/samples/tnsnames.ora</p><p>还可以用locate 来查找</p><blockquote><p>locate tnsnames.ora</p></blockquote><p>结果是：<br>/opt/app/oracle/product/10.2/hs/admin/tnsnames.ora.sample<br>/opt/app/oracle/product/10.2/network/admin/tnsnames.ora<br>/opt/app/oracle/product/10.2/network/admin/samples/tnsnames.ora</p><p>10.find查找文件</p><p>find / -name httpd.conf　　#在根目录下查找文件httpd.conf，表示在整个硬盘查找<br>find /etc -name httpd.conf　　#在/etc目录下文件httpd.conf<br>find /etc -name ‘srm‘　　#使用通配符(0或者任意多个)。表示在/etc目录下查找文件名中含有字符串‘srm’的文件<br>find . -name ‘srm‘ 　　#表示当前目录下查找文件名开头是字符串‘srm’的文件</p><p>按照文件特征查找 　　　　<br>find / -amin -10 　　# 查找在系统中最后10分钟访问的文件(access time)<br>find / -atime -2　　 # 查找在系统中最后48小时访问的文件<br>find / -empty 　　# 查找在系统中为空的文件或者文件夹<br>find / -group cat 　　# 查找在系统中属于 group为cat的文件<br>find / -mmin -5 　　# 查找在系统中最后5分钟里修改过的文件(modify time)<br>find / -mtime -1 　　#查找在系统中最后24小时里修改过的文件<br>find / -user fred 　　#查找在系统中属于fred这个用户的文件<br>find / -size +10000c　　#查找出大于10000000字节的文件(c:字节，w:双字，k:KB，M:MB，G:GB)<br>find / -size -1000k 　　#查找出小于1000KB的文件</p><h2 id="查看文件"><a href="#查看文件" class="headerlink" title="查看文件"></a>查看文件</h2><p>查看文件内容的命令：</p><p><strong>cat     由第一行开始显示内容，并将所有内容输出   （之前公司用的比较多）</strong></p><p>tac     从最后一行倒序显示内容，并将所有内容输出</p><p>more    根据窗口大小，一页一页的现实文件内容</p><p>less    和more类似，但其优点可以往前翻页，而且进行可以搜索字符</p><p>head    只显示头几行</p><p>tail    只显示最后几行                             <strong>（之前公司用的比较多）</strong></p><p>nl      类似于cat -n，显示时输出行号</p><p>tailf   类似于tail -f     </p><p>查看命令下一步其实就是编辑，但是编辑命令涉及比较多，参考文章：Linux文件编辑命令vi详细说明</p><h2 id="1-cat-与-tac"><a href="#1-cat-与-tac" class="headerlink" title="1.cat 与 tac"></a>1.cat 与 tac</h2><p>cat的功能是将文件从第一行开始连续的将内容输出在屏幕上。但是cat并不常用，原因是当文件大，行数比较多时，屏幕无法全部容下时，只能看到一部分内容。</p><p><strong>cat语法</strong>：cat [-n]  文件名 （-n ： 显示时，连行号一起输出）</p><p>tac的功能是将文件从最后一行开始倒过来将内容数据输出到屏幕上。我们可以发现，tac实际上是cat反过来写。这个命令也不常用。</p><p><strong>tac语法</strong>：tac 文件名。</p><p><strong>2.more和less（常用）</strong><br>more的功能是将文件从第一行开始，根据输出窗口的大小，适当的输出文件内容。当一页无法全部输出时，可以用“回车键”向下翻行，用“空格键”向下翻页。退出查看页面，请按“q”键。另外，more还可以配合管道符“|”（pipe）使用，例如:ls -al | more</p><p>more的语法：more 文件名</p><p>Enter 向下n行，需要定义，默认为1行； </p><p>Ctrl f 向下滚动一屏； </p><p>空格键 向下滚动一屏； </p><p>Ctrl b 返回上一屏； </p><p>= 输出当前行的行号； </p><p>:f 输出文件名和当前行的行号； </p><p>v 调用vi编辑器； </p><p>! 命令 调用Shell，并执行命令； </p><p>q 退出more</p><p>less的功能和more相似，但是使用more无法向前翻页，只能向后翻。</p><p>less可以使用【pageup】和【pagedown】键进行前翻页和后翻页，这样看起来更方便。</p><p>less的语法：less 文件名</p><p>less还有一个功能，可以在文件中进行搜索你想找的内容，假设你想在passwd文件中查找有没有weblogic字符串，那么你可以这样来做：</p><p>[root@redhat etc]# less passwd</p><p>然后输入：</p><p>/weblogic</p><p>回车</p><p>此时如果有weblogic字符串，linux会把该字符已高亮方式显示。</p><p>退出查看页面，请按“q”键。</p><p><strong>3.head和tail</strong><br>head和tail通常使用在只需要读取文件的前几行或者后几行的情况下使用。head的功能是显示文件的前几行内容</p><p>head的语法：head [n number] 文件名 (number 显示行数)</p><p>tail的功能恰好和head相反，只显示最后几行内容</p><p>tail的语法:tail [-n number] 文件名</p><p><strong>4.nl</strong><br>nl的功能和cat -n一样，同样是从第一行输出全部内容，并且把行号显示出来</p><p>nl的语法：nl 文件名</p><p><strong>5.tailf</strong><br>　tailf命令几乎等同于tail -f，严格说来应该与tail –follow=name更相似些。当文件改名之后它也能继续跟踪，特别适合于日志文件的跟踪（follow the growth of a log file）。与tail -f不同的是，如果文件不增长，它不会去访问磁盘文件（It is similar to tail -f but does not access the file when it is not growing.  This has the side effect of not updating the access  time for the file, so a filesystem flush does not occur periodically when no log activity is happening.）。tailf特别适合那些便携机上跟踪日志文件，因为它能省电，因为减少了磁盘访问嘛（tailf  is extremely useful for monitoring log files on a laptop when logging is infrequent and the user desires that the hard disk spin down to conserve battery life.）。tailf命令不是个脚本，而是一个用C代码编译后的二进制执行文件，某些Linux安装之后没有这个命令，本文提供了怎么编译安装tailf命令的方法。<br>————————————————</p><blockquote><p>版权声明：本文为CSDN博主「yunlive」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/u012106306/article/details/94722068">https://blog.csdn.net/u012106306/article/details/94722068</a></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>Linux</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>转载</tag>
+      
+      <tag>Linux</tag>
       
     </tags>
     

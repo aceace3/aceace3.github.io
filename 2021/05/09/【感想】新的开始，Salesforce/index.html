@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="Zhao Yi">
   <meta name="keywords" content="">
-  <title>【Salseforce】Batch - ZhaoYi的树洞</title>
+  <title>【感想】新的开始，Salesforce - ZhaoYi的树洞</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -179,7 +179,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="【Salseforce】Batch">
+            <span class="h2" id="subtitle" title="【感想】新的开始，Salesforce">
               
             </span>
 
@@ -189,7 +189,7 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-05-09 22:09" pubdate>
+      <time datetime="2021-05-09 22:06" pubdate>
         2021年5月9日 晚上
       </time>
     </span>
@@ -201,7 +201,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      361 字
+      425 字
     </span>
   
 
@@ -241,26 +241,16 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">【Salseforce】Batch</h1>
+            <h1 style="display: none">【感想】新的开始，Salesforce</h1>
             
             <div class="markdown-body">
-              <hr>
-<p><strong><em>下述内容皆为个人学习用，水平有限，出现错误希望大家见谅并回复指教~<br>相互学习，不胜感激！</em></strong></p>
+              <p>唯一一份Java实习已经结束有一段日子了，学习salesforce也一个多月了。</p>
+<p>临近毕业，工作，生活和学习中都有很多事情要忙，博客一直都没有写，没想到这一拖，拖到现在写的第一篇技术文章都不是Java了，事情的发展还真是难以预料啊。</p>
+<p>现在用到的技术语法与Java有相似的地方，所以上手不是太难，但是继续学习下去还是要勤奋坚持的，毕竟本人愚钝，而且学习环境还是英文，每次查个bug还要借用梯子。。</p>
+<p>这个时候，我又想起大一大二在KFC兼职时候的事情了，第一份领工资的地方。在入职前忐忑不安，害怕会怯场。上班之后遇见一个大我两岁的学长跟我说“这是工作，不是玩儿”，听完这话我好像悟了点什么，当天晚上睡觉前我就下定决心要早日做到独当一面，哈哈，这个词感觉真帅，最后也确实做到了。</p>
+<p>所以这次也加油吧！</p>
 <hr>
-<h2 id="1-Batch-Apex"><a href="#1-Batch-Apex" class="headerlink" title="1.Batch Apex"></a>1.Batch Apex</h2><p>salesforce ( 简称 sf ) 是一个多租户的平台，大家共享服务器资源，因此在设计时，多了一个 <strong>Apex Governor Limits</strong> 的限制。</p>
-<blockquote>
-<p><strong>Apex Governor Limits</strong>： <a target="_blank" rel="noopener" href="https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm">https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_apexgov.htm</a></p>
-</blockquote>
-<p> 而Batch Apex就是用来解决query大数据量时被限制的问题的。具体介绍在下边：</p>
-<blockquote>
-<p><strong>Batch Apex</strong>：<a target="_blank" rel="noopener" href="https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_batch_interface.htm">https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_batch_interface.htm</a></p>
-</blockquote>
-<hr>
-<p><strong>笔记</strong></p>
-<p>最后在调用的时候要这样写： </p>
-<figure class="highlight plain"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs Apex">Database.executeBatch(new TestBatch(), 5); <br></code></pre></div></td></tr></table></figure>
-<p>两个参数，第一个为我们自定义的batch。第二个是设置查询出来的数据每次进入execute()方法几条记录。打个比方，我们使用batch查询100条数据，上边设置为5，这样batch会在查询出100条记录以后，调用20次execute()方法，一次传入5条记录。全部执行完毕之后再调用finish()方法。</p>
-<p>因此在一些场景下，比如汇总所有Account下Contract的总金额时，需要为<strong>每一个</strong>Account汇总他自己拥有的Contract的总金额，应该在batch一开始写查询语句时，<strong>查的是Account对象</strong>，因为如果反过来查Contract的话，会出现查询结果超过5条，这样execute()得到的数据就不全，方法中的逻辑就一定会是错的！</p>
+<p>至于博客以后的方向，还是多发一些自己的学习体会吧，记录下来避免忘记。<br>内容多是sf知识，但是等过些日子，得了空，还是要深入学习计算机基础的。算法，数据结构，计算机网络，数据库，Python，AI等等等等。而且Java学了那么久，也有感情了，打算再写个项目维护下去。所以这些也会在博客体现吧，希望可以做到。不过大概率还是龟速更新的哈哈。。。</p>
 
             </div>
             <hr>
@@ -293,9 +283,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/">
+                      <a href="/2021/05/09/%E3%80%90Salseforce%E3%80%91Batch/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">【感想】Salesforce END</span>
+                        <span class="hidden-mobile">【Salseforce】Batch</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -303,8 +293,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%EF%BC%8CSalesforce/">
-                        <span class="hidden-mobile">【感想】新的开始，Salesforce</span>
+                      <a href="/2021/04/24/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90Linux%E3%80%91%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+                        <span class="hidden-mobile">【转载】【Linux】常用命令</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
