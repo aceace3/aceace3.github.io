@@ -127,6 +127,209 @@
   </entry>
   
   <entry>
+    <title>【转载】【MySQL】修改MySQL密码</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90MySQL%E3%80%91%E4%BF%AE%E6%94%B9MySQL%E5%AF%86%E7%A0%81/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90MySQL%E3%80%91%E4%BF%AE%E6%94%B9MySQL%E5%AF%86%E7%A0%81/</id>
+    <published>2021-02-19T15:25:00.000Z</published>
+    <updated>2021-06-29T15:25:32.121Z</updated>
+    
+    <content type="html"><![CDATA[<p>第一次用这种方式修改密码，是在学校的时候，有一次上SSM课，某些教室内的电脑mysql密码跟其他人不同（包括我），然后就无法继续下去，老师就叫我查一下有没有办法解决。然后找到的办法。当时还挺有成就感哈哈。</p><p>所以大家在自己练习的过程中，如果忘记mysql密码，可以用下边方法跳过权限，直接修改密码。<br>这是mysql5.1的方法，其他版本忘记有没有区别辽 QAQ</p><p><strong>步骤</strong>：</p><ol><li>关闭mysql服务</li><li>打开cmd，粘贴下边代码（路径记得换）</li></ol><figure class="highlight taggerscript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs taggerscript">cd C:<span class="hljs-symbol">\P</span>rogram Files<span class="hljs-symbol">\M</span>ySQL<span class="hljs-symbol">\M</span>ySQL Server 5.1<span class="hljs-symbol">\b</span>in<br>mysqld --skip-grant-tables<br></code></pre></div></td></tr></table></figure><ol start="3"><li>上一个cmd窗口不动，打开一个新的cmd，粘贴下边代码</li></ol><figure class="highlight n1ql"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs n1ql">cd C:\Program Files\MySQL\MySQL Server 5.1\bin<br>mysql<br>use mysql;<br><span class="hljs-keyword">update</span> <span class="hljs-keyword">user</span> <span class="hljs-keyword">set</span> <span class="hljs-keyword">password</span>=<span class="hljs-keyword">password</span>(<span class="hljs-string">&#x27;1234&#x27;</span>) <span class="hljs-keyword">where</span> <span class="hljs-keyword">user</span>=<span class="hljs-string">&#x27;root&#x27;</span> <span class="hljs-keyword">and</span> host=<span class="hljs-string">&#x27;localhost&#x27;</span>;<br></code></pre></div></td></tr></table></figure><ol start="4"><li>重启mysql服务 </li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;第一次用这种方式修改密码，是在学校的时候，有一次上SSM课，某些教室内的电脑mysql密码跟其他人不同（包括我），然后就无法继续下去，老师就叫我查一下有没有办法解决。然后找到的办法。当时还挺有成就感哈哈。&lt;/p&gt;
+&lt;p&gt;所以大家在自己练习的过程中，如果忘记mysql密码，可</summary>
+      
+    
+    
+    
+    <category term="MySQL" scheme="http://example.com/categories/MySQL/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="MySQL" scheme="http://example.com/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】命令行下雨代码</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E9%9B%A8%E4%BB%A3%E7%A0%81/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E9%9B%A8%E4%BB%A3%E7%A0%81/</id>
+    <published>2021-02-19T15:04:08.000Z</published>
+    <updated>2021-06-29T15:08:36.518Z</updated>
+    
+    <content type="html"><![CDATA[<p>在命令行下雨的代码，冒充黑客帝国？（笑）<br>效果如下：<br><img src="https://img-blog.csdnimg.cn/20210629230608574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjE5MDAxMQ==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>这玩意儿是会动的，刷刷刷刷 跟下雨的感觉一样。</p><p><strong>代码</strong>：</p><figure class="highlight routeros"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs routeros">@echo off<br>title digitalrain<br>color 0b<br>setlocal ENABLEDELAYEDEXPANSION<br><span class="hljs-keyword">for</span> /l %%i <span class="hljs-keyword">in</span> (0) <span class="hljs-keyword">do</span> (<br><span class="hljs-builtin-name">set</span> <span class="hljs-string">&quot;line=&quot;</span><br><span class="hljs-keyword">for</span> /l %%j <span class="hljs-keyword">in</span> (1,1,80) <span class="hljs-keyword">do</span> (<br><span class="hljs-builtin-name">set</span> /a Down%%<span class="hljs-attribute">j-</span>=2<br><span class="hljs-builtin-name">set</span> <span class="hljs-string">&quot;x=!Down%%j!&quot;</span><br><span class="hljs-keyword">if</span> !x! LSS 0 (<br><span class="hljs-builtin-name">set</span> /a Arrow%%<span class="hljs-attribute">j</span>=!random!%%3<br><span class="hljs-builtin-name">set</span> /a Down%%<span class="hljs-attribute">j</span>=!random!%%15+10<br>)<br><span class="hljs-builtin-name">set</span> <span class="hljs-string">&quot;x=!Arrow%%j!&quot;</span><br><span class="hljs-keyword">if</span> <span class="hljs-string">&quot;!x!&quot;</span> == <span class="hljs-string">&quot;2&quot;</span> (<br><span class="hljs-builtin-name">set</span> <span class="hljs-string">&quot;line=!line!!random:~-1! &quot;</span><br>) <span class="hljs-keyword">else</span> (<span class="hljs-builtin-name">set</span> <span class="hljs-string">&quot;line=!line! &quot;</span>)<br>)<br><span class="hljs-builtin-name">set</span> /<span class="hljs-attribute">p</span>=!line!&lt;nul<br>)<br></code></pre></div></td></tr></table></figure><p><strong>步骤</strong>：</p><ol><li>新建一个txt</li><li>粘贴上边代码</li><li>保存并关闭</li><li>修改后缀为”.bat”</li><li>双击打开~</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;在命令行下雨的代码，冒充黑客帝国？（笑）&lt;br&gt;效果如下：&lt;br&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20210629230608574.png?x-oss-process=image/watermark,type_ZmFuZ3poZ</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】【JavaScript】获取密码文本框内的值</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E8%8E%B7%E5%8F%96%E5%AF%86%E7%A0%81%E6%96%87%E6%9C%AC%E6%A1%86%E5%86%85%E7%9A%84%E5%80%BC/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E8%8E%B7%E5%8F%96%E5%AF%86%E7%A0%81%E6%96%87%E6%9C%AC%E6%A1%86%E5%86%85%E7%9A%84%E5%80%BC/</id>
+    <published>2021-02-19T15:00:14.000Z</published>
+    <updated>2021-06-29T15:02:25.677Z</updated>
+    
+    <content type="html"><![CDATA[<p>F12打开调试器，输入下边代码可以得到密码文本框内的密文密码。有时候忘记密码了但懒得改密码，可以用到~</p><figure class="highlight javascript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&quot;input[type=password]&quot;</span>).value);<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;F12打开调试器，输入下边代码可以得到密码文本框内的密文密码。有时候忘记密码了但懒得改密码，可以用到~&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter hljs&quot;&gt;&lt;div clas</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】【JavaScript】魔方打乱步骤随机生成</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E9%AD%94%E6%96%B9%E6%89%93%E4%B9%B1%E6%AD%A5%E9%AA%A4%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E9%AD%94%E6%96%B9%E6%89%93%E4%B9%B1%E6%AD%A5%E9%AA%A4%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90/</id>
+    <published>2021-02-19T14:55:53.000Z</published>
+    <updated>2021-06-29T14:58:05.114Z</updated>
+    
+    <content type="html"><![CDATA[<p>三阶魔方打乱码，随机生成js版本。</p><figure class="highlight javascript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs javascript">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">checkmove</span>(<span class="hljs-params">move, arr</span>) </span>&#123; <span class="hljs-comment">// 检测步骤合理性</span><br>        <span class="hljs-keyword">var</span> l = arr.length;<br>        <span class="hljs-keyword">return</span> move == arr[l - <span class="hljs-number">1</span>] || (move == arr[l - <span class="hljs-number">2</span>] &amp;&amp; (move / <span class="hljs-number">2</span> | <span class="hljs-number">0</span>) == (arr[l - <span class="hljs-number">1</span>] / <span class="hljs-number">2</span> | <span class="hljs-number">0</span>));<br>    &#125;<br> <br>    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rndCube</span>(<span class="hljs-params">maxSteps</span>) </span>&#123; <span class="hljs-comment">// 生成随机打乱步骤</span><br>        <span class="hljs-keyword">var</span> cubeArr = [], <span class="hljs-comment">// 打乱步骤数组</span><br>            cubeStr = <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// 打乱步骤字符串</span><br>            cube = [<span class="hljs-string">&quot;R&quot;</span>, <span class="hljs-string">&quot;L&quot;</span>, <span class="hljs-string">&quot;F&quot;</span>, <span class="hljs-string">&quot;B&quot;</span>, <span class="hljs-string">&quot;U&quot;</span>, <span class="hljs-string">&quot;D&quot;</span>], <span class="hljs-comment">// 步骤</span><br>            types = [<span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-string">&quot;&#x27;&quot;</span>, <span class="hljs-string">&quot;&#x27;&quot;</span>, <span class="hljs-string">&quot;2&quot;</span>], <span class="hljs-comment">// 步骤附加条件</span><br>            r, <span class="hljs-comment">// 随机数</span><br>            i;<br> <br>        maxSteps = maxSteps || <span class="hljs-number">25</span><br> <br>        <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; maxSteps; i++) &#123;<br>            <span class="hljs-keyword">do</span> &#123;<br>                r = <span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">6</span> | <span class="hljs-number">0</span>;<br>            &#125; <span class="hljs-keyword">while</span> (checkmove(r, cubeArr));<br>            cubeArr.push(r);<br>            cubeStr += cube[r] + types[<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">5</span> | <span class="hljs-number">0</span>] + <span class="hljs-string">&quot; &quot;</span>;<br>        &#125;<br> <br>        <span class="hljs-keyword">return</span> cubeStr;<br>    &#125;<br> <br>    <span class="hljs-built_in">console</span>.log(rndCube());<br>&#125;)();<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;三阶魔方打乱码，随机生成js版本。&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter hljs&quot;&gt;&lt;div class=&quot;hljs code-wrapper&quot;&gt;&lt;pre&gt;&lt;span c</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】【CSS】查看UI布局神器</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90CSS%E3%80%91%E6%9F%A5%E7%9C%8BUI%E5%B8%83%E5%B1%80%E7%A5%9E%E5%99%A8/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90CSS%E3%80%91%E6%9F%A5%E7%9C%8BUI%E5%B8%83%E5%B1%80%E7%A5%9E%E5%99%A8/</id>
+    <published>2021-02-19T14:52:14.000Z</published>
+    <updated>2021-06-29T14:57:07.367Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight css"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs css">* &#123;<br>    <span class="hljs-attribute">background</span>: <span class="hljs-number">#000</span> <span class="hljs-meta">!important</span>;<br>    <span class="hljs-attribute">color</span>: <span class="hljs-number">#0f0</span> <span class="hljs-meta">!important</span>;<br>    <span class="hljs-attribute">outline</span>: solid <span class="hljs-number">#f00</span> <span class="hljs-number">1px</span> <span class="hljs-meta">!important</span>;<br>&#125;<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter hljs&quot;&gt;&lt;div class=&quot;hljs code-wrapper&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span cl</summary>
+      
+    
+    
+    
+    <category term="CSS" scheme="http://example.com/categories/CSS/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="CSS" scheme="http://example.com/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】【JavaScript】menu固定</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91menu%E5%9B%BA%E5%AE%9A/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91menu%E5%9B%BA%E5%AE%9A/</id>
+    <published>2021-02-19T14:49:10.000Z</published>
+    <updated>2021-06-29T14:54:01.158Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs javascript"><span class="hljs-keyword">var</span> oTop = $(<span class="hljs-string">&quot;.nav&quot;</span>).offset().top;<br>    <span class="hljs-comment">//获取导航栏的高度，此高度用于保证内容的平滑过渡    </span><br><span class="hljs-keyword">var</span> martop = $(<span class="hljs-string">&#x27;.nav&#x27;</span>).outerHeight();     <br><span class="hljs-keyword">var</span> sTop = <span class="hljs-number">0</span>;    <br><span class="hljs-comment">// 监听页面的滚动    </span><br>$(<span class="hljs-built_in">window</span>).scroll(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123;       <br><span class="hljs-comment">// 获取页面向上滚动的距离        </span><br>sTop = $(<span class="hljs-built_in">this</span>).scrollTop();       <br> <span class="hljs-comment">// 当导航栏到达屏幕顶端       </span><br> <span class="hljs-keyword">if</span> (sTop &gt;= oTop) &#123;            <br><span class="hljs-comment">// 修改导航栏position属性，使之固定在屏幕顶端            </span><br>$(<span class="hljs-string">&quot;.nav&quot;</span>).css(&#123; <span class="hljs-string">&quot;position&quot;</span>: <span class="hljs-string">&quot;fixed&quot;</span>, <span class="hljs-string">&quot;top&quot;</span>: <span class="hljs-string">&quot;0&quot;</span> &#125;);            <br><span class="hljs-comment">// 修改内容的margin-top值，保证平滑过渡            </span><br>$(<span class="hljs-string">&quot;.content&quot;</span>).css(&#123; <span class="hljs-string">&quot;margin-top&quot;</span>: martop &#125;);       <br> &#125; <span class="hljs-keyword">else</span> &#123;            <br><span class="hljs-comment">// 当导航栏脱离屏幕顶端时，回复原来的属性           </span><br> $(<span class="hljs-string">&quot;.nav&quot;</span>).css(&#123; <span class="hljs-string">&quot;position&quot;</span>: <span class="hljs-string">&quot;static&quot;</span> &#125;);            <br>$(<span class="hljs-string">&quot;.content&quot;</span>).css(&#123; <span class="hljs-string">&quot;margin-top&quot;</span>: <span class="hljs-string">&quot;0&quot;</span> &#125;);        <br>&#125;    <br>&#125;);<br><br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter hljs&quot;&gt;&lt;div class=&quot;hljs code-wrapper&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;</summary>
+      
+    
+    
+    
+    <category term="JavaScript" scheme="http://example.com/categories/JavaScript/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="JavaScript" scheme="http://example.com/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创】【Python】爬虫</title>
+    <link href="http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Python%E3%80%91%E7%88%AC%E8%99%AB/"/>
+    <id>http://example.com/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Python%E3%80%91%E7%88%AC%E8%99%AB/</id>
+    <published>2021-02-19T14:45:41.000Z</published>
+    <updated>2021-06-29T14:47:37.143Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight python"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs python"><span class="hljs-comment"># coding=utf-8</span><br><span class="hljs-keyword">import</span> requests,os<br><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> Tag<br><span class="hljs-keyword">from</span> bs4 <span class="hljs-keyword">import</span> BeautifulSoup<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getHtml</span>(<span class="hljs-params">url</span>):</span><br>    page = requests.get(url)<br>    html = page.text<br>    <span class="hljs-keyword">return</span> html<br><br><br><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getText</span>(<span class="hljs-params">html</span>):</span><br>    get_text = Tag.get_text<br>    soup = BeautifulSoup(html, <span class="hljs-string">&#x27;html.parser&#x27;</span>)<br>    list_info = soup.find_all(<span class="hljs-string">&#x27;div&#x27;</span>, class_=<span class="hljs-string">&#x27;content box&#x27;</span>)<br>    listtext  = [x.get_text() <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> list_info]<br>    <span class="hljs-keyword">return</span> listtext<br><br><br><br><span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&#x27;__main__&#x27;</span>:<br>    <span class="hljs-comment">#生成目录位置</span><br>    file_path = os.path.join(os.getcwd(), <span class="hljs-string">&#x27;file&#x27;</span>, <span class="hljs-string">&#x27;李均儿2.txt&#x27;</span>)<br>    s=<span class="hljs-string">&quot;&quot;</span><br>    <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):<br>        a=<span class="hljs-built_in">str</span>(i)<br>        <span class="hljs-comment">#只看楼主网</span><br>        url = (<span class="hljs-string">&quot;https://zhikanl/7/%s.html&quot;</span>%a  )<br>        print(a)<br>        html = getHtml(url)<br>        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(getText(html))):<br>            s+=getText(html)[x]<br>    <span class="hljs-keyword">with</span> <span class="hljs-built_in">open</span>(file_path, <span class="hljs-string">&#x27;w&#x27;</span>, encoding=<span class="hljs-string">&#x27;utf-8&#x27;</span>) <span class="hljs-keyword">as</span> f1:<br>        f1.write(s)<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter hljs&quot;&gt;&lt;div class=&quot;hljs code-wrapper&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span</summary>
+      
+    
+    
+    
+    <category term="Python" scheme="http://example.com/categories/Python/"/>
+    
+    
+    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="Python" scheme="http://example.com/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【转载】修改Win10登录界面背景图</title>
+    <link href="http://example.com/2021/02/09/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E4%BF%AE%E6%94%B9Win10%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/"/>
+    <id>http://example.com/2021/02/09/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E4%BF%AE%E6%94%B9Win10%E7%99%BB%E5%BD%95%E7%95%8C%E9%9D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/</id>
+    <published>2021-02-09T15:27:05.000Z</published>
+    <updated>2021-06-29T15:28:43.672Z</updated>
+    
+    <content type="html"><![CDATA[<p>将图片直接放到这个路径下就可以了：<br>C:\Windows\System32\oobe\info\Backgrounds</p><p><strong>注意</strong>：</p><ul><li>图片名称不能变，必须用 Backgrounds</li><li>小于250kb</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;将图片直接放到这个路径下就可以了：&lt;br&gt;C:\Windows\System32\oobe\info\Backgrounds&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注意&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;图片名称不能变，必须用 Backgrounds&lt;/li&gt;
+&lt;li&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>【原创】开篇</title>
     <link href="http://example.com/2021/01/28/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E5%BC%80%E7%AF%87/"/>
     <id>http://example.com/2021/01/28/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E5%BC%80%E7%AF%87/</id>
