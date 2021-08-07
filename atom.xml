@@ -44,32 +44,6 @@
   </entry>
   
   <entry>
-    <title>【原创】【Jave】Object类的思考，hashCode为什么要放进类中</title>
-    <link href="http://example.com/2021/08/06/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Jave%E3%80%91Object%E7%B1%BB%E7%9A%84%E6%80%9D%E8%80%83%EF%BC%8ChashCode%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%94%BE%E8%BF%9B%E7%B1%BB%E4%B8%AD/"/>
-    <id>http://example.com/2021/08/06/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Jave%E3%80%91Object%E7%B1%BB%E7%9A%84%E6%80%9D%E8%80%83%EF%BC%8ChashCode%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%94%BE%E8%BF%9B%E7%B1%BB%E4%B8%AD/</id>
-    <published>2021-08-06T12:25:08.000Z</published>
-    <updated>2021-08-07T08:57:09.132Z</updated>
-    
-    <content type="html"><![CDATA[<p>哈哈，back to Java 了。前些日子面试遇到一个问题一直想记录一下，问我对 Object 类了解多少。<br>我复习的时候漏掉了这部分内容，就按照记忆说了一下 Java 语言是按照单根的设计思想设计的，Object 类是所有类的最终父类，然后说了几个类里边的方法。<br>然后就有了如下对话（大概意思）：</p><p>BOSS：你刚才提到了 toString() 方法，那你在哪用过呢？<br>我：写在 bean 类里边，用来打印日志。</p><p>BOSS：还有用在其他什么地方吗？<br>我：好像是没有了</p><p>BOSS：那么我问你一下啊，toString() 我们平时也就用在打印一些日志，所以说他的使用场景是很少的，那么为什么要把他放进 Object 类里呢？<br>我：..因为所有类都会继承 Object 类，所以在需要用到这个方法的时候可以拿来就用？</p><p>BOSS：那我再问你哈，Object 类中的 hashCode() 方法，是用来散列的对吧，大部分情况就是用来保存到数组时候用的，那为什么不把这个方法放进数组的接口里，而要放进 Object 类？<br>我：….（思考无果）</p><p>BOSS：你用设计者的思想来想一下？<br>我：….（思考无果）</p><p>↑ 以上。</p><p>这个问题直接给我问住了，从来没有想过这个问题，时候又从网上查了查，但都是一些介绍类介绍方法的帖子，没有关于设计思想的回答。属实很迷。<br>记录一下吧，如果有大佬会，希望赐教一下~<br>或者日后要是看哪本书的时候看到了解释，再回来更新。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;哈哈，back to Java 了。前些日子面试遇到一个问题一直想记录一下，问我对 Object 类了解多少。&lt;br&gt;我复习的时候漏掉了这部分内容，就按照记忆说了一下 Java 语言是按照单根的设计思想设计的，Object 类是所有类的最终父类，然后说了几个类里边的方法。&lt;</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
-    
-    
-    <category term="原创" scheme="http://example.com/tags/%E5%8E%9F%E5%88%9B/"/>
-    
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>【感想】Salesforce END</title>
     <link href="http://example.com/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/"/>
     <id>http://example.com/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/</id>
