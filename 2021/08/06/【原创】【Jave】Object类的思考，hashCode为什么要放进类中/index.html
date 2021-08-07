@@ -17,9 +17,25 @@
   <meta name="description" content="">
   <meta name="author" content="Zhao Yi">
   <meta name="keywords" content="">
-  <title>标签 - 原创 - ZhaoYi的树洞</title>
+  <title>【原创】【Jave】Object类的思考，hashCode为什么要放进类中 - ZhaoYi的树洞</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -52,7 +68,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -163,17 +179,50 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="标签 - 原创">
+            <span class="h2" id="subtitle" title="【原创】【Jave】Object类的思考，hashCode为什么要放进类中">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-06 20:25" pubdate>
+        2021年8月6日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      430 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      4
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -182,106 +231,132 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 11 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/08/06/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Jave%E3%80%91Object%E7%B1%BB%E7%9A%84%E6%80%9D%E8%80%83%EF%BC%8ChashCode%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%94%BE%E8%BF%9B%E7%B1%BB%E4%B8%AD/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【Jave】Object类的思考，hashCode为什么要放进类中</span>
-      <time style="float: right;">08-06</time>
-    </a>
-  
-    
-    <a href="/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【感想】Salesforce END</span>
-      <time style="float: right;">06-24</time>
-    </a>
-  
-    
-    <a href="/2021/05/09/%E3%80%90Salseforce%E3%80%91Batch/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【Salseforce】Batch</span>
-      <time style="float: right;">05-09</time>
-    </a>
-  
-    
-    <a href="/2021/05/09/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B%EF%BC%8CSalesforce/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【感想】新的开始，Salesforce</span>
-      <time style="float: right;">05-09</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91%E3%80%90MySQL%E3%80%91%E4%BF%AE%E6%94%B9MySQL%E5%AF%86%E7%A0%81/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【转载】【MySQL】修改MySQL密码</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E8%8E%B7%E5%8F%96%E5%AF%86%E7%A0%81%E6%96%87%E6%9C%AC%E6%A1%86%E5%86%85%E7%9A%84%E5%80%BC/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【JavaScript】获取密码文本框内的值</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91%E9%AD%94%E6%96%B9%E6%89%93%E4%B9%B1%E6%AD%A5%E9%AA%A4%E9%9A%8F%E6%9C%BA%E7%94%9F%E6%88%90/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【JavaScript】魔方打乱步骤随机生成</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90CSS%E3%80%91%E6%9F%A5%E7%9C%8BUI%E5%B8%83%E5%B1%80%E7%A5%9E%E5%99%A8/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【CSS】查看UI布局神器</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90JavaScript%E3%80%91menu%E5%9B%BA%E5%AE%9A/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【JavaScript】menu固定</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-    
-    <a href="/2021/02/19/%E3%80%90%E5%8E%9F%E5%88%9B%E3%80%91%E3%80%90Python%E3%80%91%E7%88%AC%E8%99%AB/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">【原创】【Python】爬虫</span>
-      <time style="float: right;">02-19</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">【原创】【Jave】Object类的思考，hashCode为什么要放进类中</h1>
+            
+            <div class="markdown-body">
+              <p>哈哈，back to Java 了。前些日子面试遇到一个问题一直想记录一下，问我对 Object 类了解多少。<br>我复习的时候漏掉了这部分内容，就按照记忆说了一下 Java 语言是按照单根的设计思想设计的，Object 类是所有类的最终父类，然后说了几个类里边的方法。<br>然后就有了如下对话（大概意思）：</p>
+<p>BOSS：你刚才提到了 toString() 方法，那你在哪用过呢？<br>我：写在 bean 类里边，用来打印日志。</p>
+<p>BOSS：还有用在其他什么地方吗？<br>我：好像是没有了</p>
+<p>BOSS：那么我问你一下啊，toString() 我们平时也就用在打印一些日志，所以说他的使用场景是很少的，那么为什么要把他放进 Object 类里呢？<br>我：..因为所有类都会继承 Object 类，所以在需要用到这个方法的时候可以拿来就用？</p>
+<p>BOSS：那我再问你哈，Object 类中的 hashCode() 方法，是用来散列的对吧，大部分情况就是用来保存到数组时候用的，那为什么不把这个方法放进数组的接口里，而要放进 Object 类？<br>我：….（思考无果）</p>
+<p>BOSS：你用设计者的思想来想一下？<br>我：….（思考无果）</p>
+<p>↑ 以上。</p>
+<p>这个问题直接给我问住了，从来没有想过这个问题，时候又从网上查了查，但都是一些介绍类介绍方法的帖子，没有关于设计思想的回答。属实很迷。<br>记录一下吧，如果有大佬会，希望赐教一下~<br>或者日后要是看哪本书的时候看到了解释，再回来更新。</p>
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/tags/%E5%8E%9F%E5%88%9B/page/2/">2</a><a class="extend next" rel="next" href="/tags/%E5%8E%9F%E5%88%9B/page/2/"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Java/">Java</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8E%9F%E5%88%9B/">原创</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Java/">Java</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2021/08/07/%E3%80%90%E8%BD%AC%E8%BD%BD%E3%80%91mark%E4%B8%80%E4%B8%8B%E5%85%B6%E4%BB%96%E4%BA%BA%E7%9A%84%E6%96%87%E7%AB%A0/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">【转载】mark一下其他人的文章</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/06/24/%E3%80%90%E6%84%9F%E6%83%B3%E3%80%91Salesforce-END/">
+                        <span class="hidden-mobile">【感想】Salesforce END</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments">
+                
+                
+  <div id="vcomments"></div>
+  <script type="text/javascript">
+    Fluid.utils.waitElementVisible('vcomments', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function () {
+        new Valine({
+          el: "#vcomments",
+          app_id: "btOK5qXKqerF4fBFgNOvK3xo-gzGzoHsz",
+          app_key: "l9veVVbQxonp6fO4ikAiriGe",
+          placeholder: "谢谢您的评论 ^_^",
+          path: window.location.pathname,
+          avatar: "retro",
+          meta: ["nick","mail","link"],
+          pageSize: "10",
+          lang: "zh-CN",
+          highlight: true,
+          recordIP: true,
+          serverURLs: "https://btok5qxk.lc-cn-n1-shared.com",
+        });
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the
+    <a target="_blank" href="https://valine.js.org" rel="nofollow noopener noopener">comments powered by Valine.</a>
+  </noscript>
+
+
+              </article>
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -385,9 +460,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
